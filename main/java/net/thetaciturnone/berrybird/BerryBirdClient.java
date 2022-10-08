@@ -8,8 +8,6 @@ import net.thetaciturnone.berrybird.entity.client.BerryBirdRenderer;
 public class BerryBirdClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-
         EntityRendererRegistry.register(ModEntities.BERRY_BIRD, BerryBirdRenderer::new);
-
     }
 }

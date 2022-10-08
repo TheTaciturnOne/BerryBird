@@ -12,13 +12,12 @@ public class BerryBirdModel extends AnimatedGeoModel<BerryBirdEntity> {
     }
 
     @Override
-    public Identifier getTextureResource(BerryBirdEntity instance) {
+    public Identifier getTextureResource(BerryBirdEntity object) {
         return new Identifier(BerryBird.MOD_ID, "textures/entity/berry_bird.png");
     }
 
     @Override
-    public Identifier getAnimationResource(BerryBirdEntity instance) {
+    public Identifier getAnimationResource(BerryBirdEntity animatable) {
         return new Identifier(BerryBird.MOD_ID, "animations/berry_bird.animation.json");
     }
-
 }

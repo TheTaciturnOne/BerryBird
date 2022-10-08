@@ -13,7 +13,7 @@ import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
 public class BerryBirdRenderer extends GeoEntityRenderer<BerryBirdEntity> {
     public BerryBirdRenderer(EntityRendererFactory.Context cxt) {
         super(cxt, new BerryBirdModel());
-        this.shadowRadius = 0.2f;
+        this.shadowRadius = 0.4f;
     }
 
     @Override
@@ -21,11 +21,11 @@ public class BerryBirdRenderer extends GeoEntityRenderer<BerryBirdEntity> {
         return new Identifier(BerryBird.MOD_ID, "textures/entity/berry_bird.png");
     }
 
-    public RenderLayer getRenderType(BerryBirdEntity animateable, float partialTicks, MatrixStack stack,
+    public RenderLayer getRenderType(BerryBirdEntity animatable, float partialTicks, MatrixStack stack,
                                      VertexConsumerProvider renderTypeBuffer, VertexConsumer vertexBuilder,
                                      int packedLightIn, Identifier textureLocation) {
         stack.scale(0.8f, 0.8f, 0.8f);
 
-        return super.getRenderType(animateable, partialTicks, stack, renderTypeBuffer, vertexBuilder, packedLightIn, textureLocation);
+        return super.getRenderType(animatable, partialTicks, stack, renderTypeBuffer, vertexBuilder, packedLightIn, textureLocation);
     }
 }
